@@ -15,11 +15,11 @@ pipeline {
                  //   bat 'dir'
                  //   bat 'dotnet restore'
                  //   bat 'dotnet msbuild .\\StudentAdmissionSystem\\StudentAdmission.csproj'
-                 bat """
+                bat """
                     cd .\\StudentAdmissionSystem
-                    dotnet restore
-                    dotnet msbuild .\\StudentAdmission.csproj
-                """.stripIndent().trim()
+                    dir 
+                    dotnet publish -c Release -r win-x64 --output C:\inetpub\wwwroot\admission MySolution.sln
+                    """.stripIndent().trim()
                 }
             }
         }
