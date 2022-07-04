@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentAdmission", "DemoApplication\StudentAdmission.csproj", "{8A461DA5-4964-468F-9EC3-9024F3BCB2BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentAttendanceSystem", "StudentAttendanceSystem\StudentAttendanceSystem.csproj", "{E4186BA4-5E62-47CA-8BA9-E77999C584B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A461DA5-4964-468F-9EC3-9024F3BCB2BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A461DA5-4964-468F-9EC3-9024F3BCB2BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A461DA5-4964-468F-9EC3-9024F3BCB2BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A461DA5-4964-468F-9EC3-9024F3BCB2BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4186BA4-5E62-47CA-8BA9-E77999C584B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4186BA4-5E62-47CA-8BA9-E77999C584B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4186BA4-5E62-47CA-8BA9-E77999C584B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4186BA4-5E62-47CA-8BA9-E77999C584B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3948C278-7AF0-4C6B-9BB7-D14F42F1416F}
+	EndGlobalSection
+EndGlobal
