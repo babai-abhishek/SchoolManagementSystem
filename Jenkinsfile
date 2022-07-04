@@ -8,5 +8,13 @@ pipeline {
                 checkout scm
             }
         }
+        stage('Build stage') {
+            steps {
+                script{
+                    bat 'cd StudentAdmissionSystem'
+                    bat 'msbuild /t:Package StudentAdmission.csproj'
+                }
+            }
+        }
     }
 }
