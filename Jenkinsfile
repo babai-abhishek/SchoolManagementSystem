@@ -11,10 +11,10 @@ pipeline {
         stage('Build stage') {
             steps {
                 script{
-                 //   bat 'cd /D .\\StudentAdmissionSystem'
+                    bat 'cd /D .\\StudentAdmissionSystem'
                     bat 'dir'
-                    bat 'dotnet restore'
-                    bat 'dotnet msbuild .\\StudentAdmissionSystem\\StudentAdmission.csproj'
+                //    bat 'dotnet restore'
+                 //   bat 'dotnet msbuild .\\StudentAdmissionSystem\\StudentAdmission.csproj'
                 }
             }
         }
