@@ -12,6 +12,7 @@ pipeline {
             steps {
                 script{
                     bat 'cd StudentAdmissionSystem'
+                    echo 'dir'
                     bat 'msbuild /t:Package StudentAdmission.csproj'
                 }
             }
