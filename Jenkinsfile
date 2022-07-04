@@ -13,11 +13,10 @@ pipeline {
                 script{
                  //   bat 'cd /D .\\StudentAdmissionSystem'
                  //   bat 'dir'
-                //    bat 'dotnet restore'
+                 //   bat 'dotnet restore'
                  //   bat 'dotnet msbuild .\\StudentAdmissionSystem\\StudentAdmission.csproj'
                  bat """
                     cd .\\StudentAdmissionSystem
-                    dir 
                     dotnet restore
                     dotnet msbuild .\\StudentAdmission.csproj
                 """.stripIndent().trim()
