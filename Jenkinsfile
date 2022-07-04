@@ -11,7 +11,7 @@ pipeline {
         stage('Build stage') {
             steps {
                 script{
-                    bat 'cd .\\StudentAdmissionSystem'
+                    bat 'cd /\D .\\StudentAdmissionSystem'
                     bat 'dir'
                     bat 'msbuild /t:Package StudentAdmission.csproj'
                 }
