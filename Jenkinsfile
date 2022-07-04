@@ -13,7 +13,7 @@ pipeline {
                 script{
                  //   bat 'cd /D .\\StudentAdmissionSystem'
                     bat 'dir'
-                    bat 'msbuild /t:Package .\\StudentAdmissionSystem\\StudentAdmission.csproj'
+                    bat 'dotnet msbuild .\\StudentAdmissionSystem\\StudentAdmission.csproj'
                 }
             }
         }
