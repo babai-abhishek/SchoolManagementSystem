@@ -18,7 +18,7 @@ pipeline {
                 bat """
                     cd .\\StudentAdmissionSystem
                     dir 
-                    dotnet publish -c Release -r win-x64 --output C:\\inetpub\\wwwroot\\admission MySolution.sln
+                    dotnet publish StudentAdmission.csproj --output C:\\inetpub\\wwwroot\\admission
                     """.stripIndent().trim()
                 }
             }
