@@ -18,6 +18,7 @@ pipeline {
                  bat """
                     cd .\\StudentAdmissionSystem
                     dir 
+                    dotnet msbuild .\\StudentAdmissionSystem\\StudentAdmission.csproj
                 """.stripIndent().trim()
                 }
             }
