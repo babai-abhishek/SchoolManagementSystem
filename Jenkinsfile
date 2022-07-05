@@ -7,8 +7,8 @@ node {
     stage('Build stage') {
             bat """
                 cd .\\StudentAdmissionSystem
-                dotnet restore
-                dotnet publish StudentAdmission.csproj
+                dotnet build -c Release /p:Version=${BUILD_NUMBER}
+                dotnet publish -c Release --no-build
                 """.stripIndent().trim()
     }
     
