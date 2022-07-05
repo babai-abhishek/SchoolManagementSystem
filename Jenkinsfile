@@ -7,6 +7,7 @@ node {
     stage('Build stage') {
             bat """
                 cd .\\StudentAdmissionSystem
+                dotnet restore
                 dotnet publish -c Release --no-build
                 """.stripIndent().trim()
     }
