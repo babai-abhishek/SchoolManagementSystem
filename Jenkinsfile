@@ -17,8 +17,8 @@ pipeline {
                  //   bat 'dotnet msbuild .\\StudentAdmissionSystem\\StudentAdmission.csproj'
                 bat """
                     cd .\\StudentAdmissionSystem
-                    dir 
-                    dotnet publish StudentAdmission.csproj --output C:\\inetpub\\wwwroot\\admission
+                    dotnet build -c Release /p:Version=${BUILD_NUMBER}
+                    dotnet publish -c Release --no-build
                     """.stripIndent().trim()
                 }
             }
