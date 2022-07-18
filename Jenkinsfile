@@ -15,10 +15,10 @@ node {
     stage('Deploy') {
         withCredentials([usernamePassword(credentialsId: 'win-iis-cred', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) { 
             bat """ 
-                "C:\\Program Files (x86)\\IIS\\Microsoft Web Deploy V3\\msdeploy.exe" -verb:sync
-                -source:iisApp="C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\dotnet-pipeline_dev@2\\StudentAdmissionSystem\\bin\\Release\\net6.0\\publish" 
-                -enableRule:AppOffline 
-                -dest:iisApp="stuadmission",ComputerName="https://34.227.229.158:8172/msdeploy.axd",UserName="$USERNAME",Password="$PASSWORD",AuthType="Basic" -allowUntrusted
+                "C:\\Program Files (x86)\\IIS\\Microsoft Web Deploy V3\\msdeploy.exe" -verb:sync^
+                 -source:iisApp="C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\dotnet-pipeline_dev@2\\StudentAdmissionSystem\\bin\\Release\\net6.0\\publish"^ 
+                 -enableRule:AppOffline^ 
+                 -dest:iisApp="stuadmission",ComputerName="https://34.227.229.158:8172/msdeploy.axd",UserName="$USERNAME",Password="$PASSWORD",AuthType="Basic" -allowUntrusted
                 """
             }
     }
